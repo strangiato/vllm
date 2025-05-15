@@ -12,22 +12,8 @@ Below, you can find an explanation of every engine argument:
 <!--- pyml disable-num-lines 7 no-space-in-emphasis -->
 ```{eval-rst}
 .. argparse::
-    :module: vllm.engine.arg_utils
-    :func: _engine_args_parser
-    :prog: vllm serve
-    :nodefaultconst:
-    :markdownhelp:
-```
-
-## Async Engine Arguments
-
-Additional arguments are available to the asynchronous engine which is used for online serving:
-
-<!--- pyml disable-num-lines 7 no-space-in-emphasis -->
-```{eval-rst}
-.. argparse::
-    :module: vllm.engine.arg_utils
-    :func: _async_engine_args_parser
+    :module: vllm.entrypoints.openai.cli_args
+    :func: create_parser_for_docs
     :prog: vllm serve
     :nodefaultconst:
     :markdownhelp:
